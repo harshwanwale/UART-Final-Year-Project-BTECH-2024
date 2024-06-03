@@ -1,0 +1,261 @@
+
+*** Running vivado
+    with args -log uart_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_top.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source uart_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 463.598 ; gain = 183.152
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/utils_1/imports/synth_1/uart_top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/utils_1/imports/synth_1/uart_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top uart_top -part xc7z010iclg225-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25796
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 916.074 ; gain = 440.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/uart_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'UART_rs232_rx' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'UART_rs232_rx' (0#1) [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UART_rs232_tx' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v:101]
+WARNING: [Synth 8-6090] variable 'TxDone' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'UART_rs232_tx' (0#1) [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v:22]
+INFO: [Synth 8-6157] synthesizing module 'fifo_8bit' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/fifo_8bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_8bit' (0#1) [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/fifo_8bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UART_BaudRate_generator' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/Uart_BaudRate_generator.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'UART_BaudRate_generator' (0#1) [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/Uart_BaudRate_generator.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (0#1) [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/uart_top.v:1]
+WARNING: [Synth 8-6014] Unused sequential element R_edge_reg was removed.  [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v:272]
+WARNING: [Synth 8-3848] Net pulse in module/entity UART_rs232_tx does not have driver. [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v:31]
+WARNING: [Synth 8-7137] Register TxData_reg in module fifo_8bit has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/fifo_8bit.v:60]
+WARNING: [Synth 8-7129] Port pulse in module fifo_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_tx in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[4] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[3] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[2] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[1] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[0] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RxDone in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TxEn in module UART_rs232_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.660 ; gain = 549.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1024.660 ; gain = 549.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1024.660 ; gain = 549.207
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+WARNING: [Synth 8-327] inferring latch for variable 'read_enable_reg' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v:93]
+WARNING: [Synth 8-327] inferring latch for variable 'State_reg' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v:91]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1024.660 ; gain = 549.207
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	              256 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port pulse in module fifo_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_tx in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[4] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[3] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[2] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[1] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_ptr[0] in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RxDone in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TxEn in module UART_rs232_tx is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (I_RS232RX/State_reg[1]) is unused and will be removed from module uart_top.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'I_RS232RX/State_reg[1]__0/Q' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v:54]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I_RS232RX/State[0] with 1st driver pin 'I_RS232RX/State_reg[0]__0/Q' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I_RS232RX/State[0] with 2nd driver pin 'I_RS232RX/State_reg[0]/Q' [C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v:91]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     6|
+|3     |LUT1   |     6|
+|4     |LUT2   |    18|
+|5     |LUT3   |    11|
+|6     |LUT4   |     1|
+|7     |LUT5   |     2|
+|8     |LUT6   |     2|
+|9     |FDCE   |    17|
+|10    |FDRE   |    26|
+|11    |LD     |     2|
+|12    |IBUF   |     3|
+|13    |OBUF   |     9|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+------------------------+------+
+|      |Instance    |Module                  |Cells |
++------+------------+------------------------+------+
+|1     |top         |                        |   105|
+|2     |  I_BAUDGEN |UART_BaudRate_generator |    46|
+|3     |  I_RS232RX |UART_rs232_rx           |    44|
++------+------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1212.078 ; gain = 736.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 5 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1212.078 ; gain = 736.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1212.078 ; gain = 736.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1218.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1320.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+Access is denied.
+Synth Design complete | Checksum: 628c2f1e
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 26 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1320.398 ; gain = 852.852
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1320.398 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.runs/synth_1/uart_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_top_utilization_synth.rpt -pb uart_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 19 09:54:58 2024...

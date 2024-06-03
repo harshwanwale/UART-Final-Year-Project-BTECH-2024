@@ -1,0 +1,14 @@
+srcscan starts
+INFO: analyzing module UART_rs232_rx (VERI-9002)
+INFO: analyzing module UART_rs232_tx (VERI-9002)
+INFO: analyzing module UART_BaudRate_generator (VERI-9002)
+INFO: analyzing module uart_top (VERI-9002)
+INFO: analyzing module UART_rs232_rx (VERI-9002)
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v(23): WARNING: overwriting previous definition of module 'UART_rs232_rx' (VERI-1206)
+INFO: analyzing module UART_rs232_tx (VERI-9002)
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v(22): WARNING: overwriting previous definition of module 'UART_rs232_tx' (VERI-1206)
+INFO: analyzing module UART_BaudRate_generator (VERI-9002)
+C:/Users/Harsh/AppData/Local/Temp/VivadoEditorAssist17614367712479622374.tmp(30): WARNING: overwriting previous definition of module 'UART_BaudRate_generator' (VERI-1206)
+INFO: analyzing module uart_top (VERI-9002)
+C:/Users/Harsh/AppData/Local/Temp/VivadoEditorAssist15490615507580818132.tmp(1): WARNING: overwriting previous definition of module 'uart_top' (VERI-1206)
+srcscan exits with return value 0

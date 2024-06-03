@@ -1,0 +1,10 @@
+srcscan starts
+INFO: analyzing module UART_rs232_rx (VERI-9002)
+INFO: analyzing module UART_rs232_tx (VERI-9002)
+INFO: analyzing module UART_BaudRate_generator (VERI-9002)
+INFO: analyzing module uart_top (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:uart_top
+END of tops
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/uart_top.v(1): INFO: compiling module 'uart_top_default' (VERI-1018)
+srcscan exits with return value 0

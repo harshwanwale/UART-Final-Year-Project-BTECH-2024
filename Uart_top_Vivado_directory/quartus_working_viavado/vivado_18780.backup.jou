@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun May 19 09:26:14 2024
+# Process ID: 18780
+# Current directory: C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12892 C:\Users\Harsh\Desktop\My Project\Uart_top_QUARTUS_totally_working-vivado simulation\quartus_working_viavado\quartus_working_viavado.xpr
+# Log file: C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/vivado.log
+# Journal file: C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado\vivado.jou
+# Running On: CS177-HARSH, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16934 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+synth_design -top uart_top -part xc7z010iclg225-1L -lint 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+launch_simulation -mode post-synthesis -type functional
+launch_simulation
+launch_simulation
+launch_simulation
+synth_design -top uart_top -part xc7z010iclg225-1L -lint 
+launch_simulation
+source Uart_top_tb.tcl
+relaunch_sim
+run 10 ns
+run 10 us
+save_wave_config {C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/Uart_rx_behaviour.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/Uart_rx_behaviour.wcfg}}
+set_property xsim.view {{C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/Uart_rx_behaviour.wcfg}} [get_filesets sim_1]
+save_wave_config {C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/Uart_rx_behaviour.wcfg}
+save_wave_config {C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/Uart_rx_behaviour.wcfg}
+save_wave_config {C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/Uart_rx_behaviour.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+export_ip_user_files -of_objects  [get_files {{C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/Uart_rx_behaviour.wcfg}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/Uart_rx_behaviour.wcfg}}
+launch_simulation
+launch_simulation

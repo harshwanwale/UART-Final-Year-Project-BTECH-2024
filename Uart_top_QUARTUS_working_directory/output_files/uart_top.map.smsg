@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at UART_tx.v(125): always construct contains both blocking and non-blocking assignments File: C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working - Copy - Copy/UART_tx.v Line: 125

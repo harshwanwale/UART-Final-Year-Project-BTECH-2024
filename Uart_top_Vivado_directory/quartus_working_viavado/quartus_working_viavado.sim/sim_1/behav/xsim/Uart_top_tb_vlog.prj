@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v" \
+"../../../../quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v" \
+"../../../../quartus_working_viavado.srcs/sources_1/new/Uart_BaudRate_generator.v" \
+"../../../../quartus_working_viavado.srcs/sources_1/new/fifo_8bit.v" \
+"../../../../quartus_working_viavado.srcs/sources_1/new/uart_top.v" \
+"../../../../quartus_working_viavado.srcs/sim_1/new/Uart_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

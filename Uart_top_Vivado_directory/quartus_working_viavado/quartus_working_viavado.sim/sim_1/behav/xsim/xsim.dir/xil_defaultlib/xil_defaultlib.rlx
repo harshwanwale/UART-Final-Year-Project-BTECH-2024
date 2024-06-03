@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sim_1/new/Uart_top_tb.v,1716097285,verilog,,,,Uart_top_tb,,,,,,,,
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_rx.v,1714884733,verilog,,C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v,,UART_rs232_rx,,,,,,,,
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/UART_rs232_tx.v,1716096492,verilog,,C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/Uart_BaudRate_generator.v,,UART_rs232_tx,,,,,,,,
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/Uart_BaudRate_generator.v,1714842301,verilog,,C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/fifo_8bit.v,,UART_BaudRate_generator,,,,,,,,
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/fifo_8bit.v,1716097144,verilog,,C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/uart_top.v,,fifo_8bit,,,,,,,,
+C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sources_1/new/uart_top.v,1716049932,verilog,,C:/Users/Harsh/Desktop/My Project/Uart_top_QUARTUS_totally_working-vivado simulation/quartus_working_viavado/quartus_working_viavado.srcs/sim_1/new/Uart_top_tb.v,,uart_top,,,,,,,,
